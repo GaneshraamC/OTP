@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    background: #c5c6c7;
+}
+
+.container{
+    width: 400px;
+    height: auto;
+    padding: 40px 30px;
+    background-color: #45a29e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.container h4{
+    font-size: 25px;
+    color: black;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+form .inputs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.inputs input{
+    max-width: 15%;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background: silver;
+    font-size: 25px;
+
+
+}
+
+.inputs input::-webkit-inner-spin-button,
+.inputs input::-webkit-outer-spin-button{
+    display: none;
+}
+
+.inputs input:focus{
+    outline:3px solid ;
+    outline-offset: 2px;
+
+}
+
+form button{
+    margin-top: 25px;
+    width: 80%;
+    background: #e9d585;
+    color: #525252;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+form button.active{
+    background: #ffcc00;
+    pointer-events: auto;
+    color: #000;
+}
+
+form button:hover{
+    background: #e6b801;
+}
